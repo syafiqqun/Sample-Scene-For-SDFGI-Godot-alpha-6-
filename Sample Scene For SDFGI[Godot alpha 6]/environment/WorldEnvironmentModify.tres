@@ -1,0 +1,28 @@
+[gd_resource type="Environment" load_steps=3 format=3 uid="uid://co2vf3o73ppo8"]
+
+[sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_jm3xa"]
+rayleigh_color = Color(0.211765, 0.509804, 0.94902, 1)
+mie_eccentricity = 0.91
+mie_color = Color(0.403922, 0.415686, 0.509804, 1)
+ground_color = Color(0.854902, 0.843137, 0.792157, 1)
+exposure = 0.12
+
+[sub_resource type="Sky" id="Sky_13ael"]
+sky_material = SubResource( "PhysicalSkyMaterial_jm3xa" )
+
+[resource]
+background_mode = 2
+sky = SubResource( "Sky_13ael" )
+ambient_light_source = 3
+reflected_light_source = 2
+tonemap_mode = 2
+tonemap_white = 6.0
+ssao_enabled = true
+sdfgi_enabled = true
+sdfgi_use_occlusion = true
+sdfgi_cascades = 6
+sdfgi_max_distance = 819.2
+glow_enabled = true
+glow_normalized = true
+glow_strength = 0.71
+glow_blend_mode = 1
